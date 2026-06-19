@@ -1,0 +1,14 @@
+services:
+  dev:
+    build: .
+    image: ncku-compiler-hw1:ubuntu22
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - linux-build:/workspace/build
+    command: sleep infinity
+    stdin_open: true
+    tty: true
+
+volumes:
+  linux-build:

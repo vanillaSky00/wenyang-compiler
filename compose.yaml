@@ -1,7 +1,7 @@
 services:
   dev:
     build: .
-    image: ncku-compiler-hw1:ubuntu22
+    image: ncku-compiler
     working_dir: /workspace
     volumes:
       - .:/workspace

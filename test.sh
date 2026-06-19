@@ -28,7 +28,7 @@ NC='\033[0m' # No Color
 # Compilation
 if [ "$NO_COMPILE" = false ]; then
     echo -e "${CYAN}Compiling project...${NC}"
-    if [ ! -d "build" ]; then
+    if [ ! -f "build/CMakeCache.txt" ]; then
         cmake -B build -S .
     fi
     cmake --build build

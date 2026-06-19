@@ -7,7 +7,6 @@
 
 // Internal variable
 extern int yylineno;
-extern int yyleng;
 extern FILE* yyout;
 extern FILE* yyin;
 extern int yylex();

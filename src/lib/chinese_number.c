@@ -6,7 +6,11 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
+#if __has_include(<uchar.h>)
 #include <uchar.h>
+#else
+typedef uint_least32_t char32_t;
+#endif
 #include <math.h>
 #include <stdbool.h>
 #include <limits.h>
